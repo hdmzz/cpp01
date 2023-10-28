@@ -4,9 +4,8 @@ NAME = Braiiiiiinnnzzz
 CC		= c++
 CFLAGS	= -Werror -Wextra -Wall -std=c++98 -g3
 
-SRC			=	Zombie.cpp \
-				newZombie.cpp \
-				randomChump.cpp	\
+SRC			=	zombieHorde.cpp \
+				Zombie.cpp \
 				main.cpp
 
 OBJ_PATH	= ./objects/
