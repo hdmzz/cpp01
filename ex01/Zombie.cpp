@@ -6,7 +6,7 @@
 /*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 10:49:16 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/10/28 14:35:39 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/10/28 14:46:09 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,10 @@
  * 								constructor/destructor
 *******************************************************************************/
 Zombie::Zombie(void) {
-	std::cout << this->_name << GREEN << " : Aaaaaaargh" << CLOSE << std::endl;
-
 	return ;
 }
 
 Zombie::~Zombie(void) {
-	std::cout << this->_name << GREEN << " : return to the grave" << CLOSE << std::endl;
-
 	return ;
 }
 

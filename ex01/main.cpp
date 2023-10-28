@@ -6,7 +6,7 @@
 /*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 10:49:22 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/10/28 14:37:54 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/10/28 14:47:16 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ int	main(void) {
 
 	for (int i = 0; i < nb; i++)
 		zHorde[i].announce();
+
+	std::cout << GREEN << "Returning Zombie to the grave" << std::endl;
 
 	delete [] zHorde;
 	return (0);
