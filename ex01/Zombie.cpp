@@ -6,7 +6,7 @@
 /*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 10:49:16 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/10/28 14:46:09 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/10/30 21:27:19 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,17 @@
 /*******************************************************************************
  * 								constructor/destructor
 *******************************************************************************/
-Zombie::Zombie(void) {
+Zombie::Zombie( void )
+{
+	std::cout << "A zombie appeared!" << std::endl;
 	return ;
 }
 
-Zombie::~Zombie(void) {
+Zombie::~Zombie( void )
+{
+	std::cout << this->_getName()
+			<< ": Uuuggghhhhuuhhh..... deaaad agaiiiiiin...."
+			<< std::endl;
 	return ;
 }
 
@@ -28,10 +34,15 @@ Zombie::~Zombie(void) {
  * 								member functions
 *******************************************************************************/
 void	Zombie::announce(void) const {
-	std::cout << this->_name << GREEN << ": BraiiiiiiinnnzzzZ..." << CLOSE << std::endl;
+	std::cout << GREEN << this->_name << ": BraiiiiiiinnnzzzZ..." << CLOSE << std::endl;
 }
 
 int		Zombie::setName(std::string name) {
 	this->_name = name;
 	return (0);
+}
+
+std::string	Zombie::_getName() const
+{
+	return (this->_name);
 }
