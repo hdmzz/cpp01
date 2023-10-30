@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdamitzi <hdamitzi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 14:09:27 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/10/30 14:50:08 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/10/30 17:57:52 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,11 +73,9 @@ int	main(int ac, char **av)
 
 	//Si tout se passe bien on est la il faut lire et faire les remplacement 
 	while (std::getline(ifs, temp))
-	{
 		replaceStrings(ofs, temp + '\n', s1.c_str(), s2.c_str());//passe une reference a ofs et pas juste lui transmettre ofs
-	}
-	
-	//pas oublier de fermer tout ce qui doit l'etre
+
 	ifs.close();
 	ofs.close();
+	return (0);
 }
