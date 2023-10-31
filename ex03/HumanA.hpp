@@ -6,7 +6,7 @@
 /*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 01:38:36 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/10/29 02:11:45 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/10/30 21:34:05 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class HumanA
 {
 private:
 	std::string			_name;
-	const Weapon&		_aWeapon;//const because it is a reference
+	const Weapon&		_aWeapon;
 
 public:
 	HumanA(std::string name, Weapon& weapon);

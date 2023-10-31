@@ -6,7 +6,7 @@
 /*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 23:07:18 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/10/29 01:44:23 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/10/30 21:33:18 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ public:
 	~Weapon();
 
 	std::string const&	getType(void) const;
-	void	setType(std::string newType);
+	void				setType(std::string newType);
 };
 
 #endif

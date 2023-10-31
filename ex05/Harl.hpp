@@ -6,7 +6,7 @@
 /*   By: hdamitzi <hdamitzi@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 18:00:05 by hdamitzi          #+#    #+#             */
-/*   Updated: 2023/10/30 18:39:22 by hdamitzi         ###   ########.fr       */
+/*   Updated: 2023/10/30 21:39:48 by hdamitzi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ private:
 public:
 	Harl();
 	~Harl();
+
 	void	complain( std::string level );
 };
 
